@@ -1,5 +1,6 @@
 /** Angular Imports */
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
@@ -11,6 +12,11 @@ import { FileUploadComponent } from './file-upload/file-upload.component';
 import { FooterComponent } from './footer/footer.component';
 import { LanguageSelectorComponent } from './language-selector/language-selector.component';
 import { ThemePickerComponent } from './theme-picker/theme-picker.component';
+import { ShellComponent } from './shell/shell.component';
+import { SidenavComponent } from './shell/sidenav/sidenav.component';
+import { ToolbarComponent } from './shell/toolbar/toolbar.component';
+import { BreadcrumbComponent } from './shell/breadcrumb/breadcrumb.component';
+import { ContentComponent } from './shell/content/content.component';
 
 /** Custom Modules */
 import { IconsModule } from './icons.module';
@@ -26,7 +32,8 @@ import { MaterialModule } from './material.module';
     CommonModule,
     IconsModule,
     MaterialModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterModule
   ],
   declarations: [
     FormfieldComponent,
@@ -36,6 +43,11 @@ import { MaterialModule } from './material.module';
     FooterComponent,
     LanguageSelectorComponent,
     ThemePickerComponent,
+    ShellComponent,
+    SidenavComponent,
+    ToolbarComponent,
+    BreadcrumbComponent,
+    ContentComponent
   ],
   exports: [
     FileUploadComponent,

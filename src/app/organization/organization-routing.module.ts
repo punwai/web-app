@@ -200,7 +200,7 @@ const routes: Routes = [
         },
         {
           path: 'bulk-import',
-          loadChildren: './bulk-import/bulk-import.module#BulkImportModule'
+          loadChildren: '../bulk-import/bulk-import.module#BulkImportModule'
         }
       ]
     }

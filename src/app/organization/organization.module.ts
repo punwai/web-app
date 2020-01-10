@@ -33,8 +33,8 @@ import { ViewEmployeeComponent } from './employees/view-employee/view-employee.c
 @NgModule({
   imports: [
     SharedModule,
-    PipesModule,
-    OrganizationRoutingModule
+    OrganizationRoutingModule,
+    PipesModule
   ],
   declarations: [
     OrganizationComponent,

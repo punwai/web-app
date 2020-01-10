@@ -3,10 +3,10 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 /** Routing Imports */
-import { Route } from '../../core/route/route.service';
+import { Route } from '../core/route/route.service';
 
 /** Translation Imports */
-import { extract } from '../../core/i18n/i18n.service';
+import { extract } from '../core/i18n/i18n.service';
 
 /** Custom Components */
 import { BulkImportComponent } from './bulk-import.component';
@@ -15,14 +15,9 @@ import { BulkImportComponent } from './bulk-import.component';
 const routes: Routes = [
   Route.withShell([
     {
-      path: 'bulk-import',
+      path: '',
       data: { title: extract('Bulk Import'), breadcrumb: 'Bulk Import' },
-      children: [
-        {
-          path: '',
-          component: BulkImportComponent
-        },
-      ]
+      component: BulkImportComponent
     }
   ])
 ];

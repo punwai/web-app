@@ -2,7 +2,7 @@
 import { NgModule } from '@angular/core';
 
 /** Custom Modules */
-import { SharedModule } from '../../shared/shared.module';
+import { SharedModule } from '../shared/shared.module'
 import { BulkImportRoutingModule } from './bulk-import-routing.module'
 
 /** Custom Components */
